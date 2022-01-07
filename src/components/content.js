@@ -9,7 +9,7 @@ const content = [
       id: 2,
       title: 'Simple Budgeting',
       body: "See exactly where your money goes each month. Receive notifications when you’re close to hitting your limits.",
-      image: 'icon-budgetting.svg',
+      image: 'icon-budgeting.svg',
     },
     {
       id: 3,
