@@ -1,4 +1,4 @@
-import { StyledMain } from "./styles/Main.styles"
+import { StyledMain } from "./styles/Main.styled"
 import content from "./content";
 
 export default function Main() {

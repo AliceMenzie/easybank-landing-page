@@ -1,4 +1,5 @@
 import { ThemeProvider } from "styled-components";
+import Article from "./components/Articles";
 import Header from "./components/Header";
 import Main from "./components/Main";
 import GlobalStyles from "./components/styles/Global";
@@ -25,6 +26,7 @@ function App() {
         <GlobalStyles />
         <Header />
         <Main/>
+        <Article/>
       </>
     </ThemeProvider>
   );
