@@ -32,7 +32,7 @@ p {
 }
 
   body {
-    overflow: hidden;
+    overflow-x: hidden;
     background: white;
     color: hsl(192, 100%, 9%);
     font-family: 'Public Sans', sans-serif;
