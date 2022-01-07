@@ -18,7 +18,7 @@ const content = [
       image: 'icon-onboarding.svg',
     },
     {
-      id: 3,
+      id: 4,
       title: 'Open API',
       body: " Manage your savings, investments, pension, and much more from one account. Tracking your money has never been easier.",
       image: 'icon-api.svg',
