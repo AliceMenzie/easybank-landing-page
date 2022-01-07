@@ -16,7 +16,8 @@ export default function Footer() {
         <li>Support</li>
         <li>Privacy Policy</li>
       </ul>
-      <button>Request Invite</button>© Easybank. All Rights Reserved
+      <button>Request Invite</button>
+      © Easybank. All Rights Reserved
     </StyledFooter>
   );
 }

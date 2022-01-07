@@ -15,6 +15,7 @@ function App() {
       darkBlue: "hsl(233, 26%, 24%)",
       limeGreen: "hsl(136, 65%, 51%)",
       brightCyan: "hsl(192, 70%, 51%)",
+      grey: "rgb(193, 193, 195)",
     },
     // mobile: "768px"
     tablet: "645px",

@@ -28,7 +28,7 @@ h4,
 h5,
 h6,
 p {
-  font-weight: 400;
+  font-weight: 300;
 }
 
   body {
@@ -36,7 +36,7 @@ p {
     background: white;
     color: hsl(192, 100%, 9%);
     font-family: 'Public Sans', sans-serif;
-    font-size: 1.15em;
+    font-size: 18px;
     margin: 0;
   }
 
