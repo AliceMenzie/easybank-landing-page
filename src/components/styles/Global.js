@@ -39,5 +39,18 @@ p {
     font-size: 1.15em;
     margin: 0;
   }
+
+  img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
 `;
 export default GlobalStyles;
