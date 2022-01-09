@@ -5,9 +5,11 @@ import Socials from "./Socials";
 export default function Footer() {
   return (
     <StyledFooter>
+      <div>
       <Logo src="./images/logo-footer.svg" alt="easybank" />
       {/* Socials Go Here */}
       <Socials/>
+      </div>
       <ul>
         <li>About Us</li>
         <li>Contact</li>
@@ -18,8 +20,12 @@ export default function Footer() {
         <li>Support</li>
         <li>Privacy Policy</li>
       </ul>
+      <div>
       <button>Request Invite</button>
-      © Easybank. All Rights Reserved
+      <p>&copy; Easybank. All Rights Reserved</p>
+      
+      </div>
+      
     </StyledFooter>
   );
 }
