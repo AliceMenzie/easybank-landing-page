@@ -9,9 +9,13 @@ export default function Article() {
         {contentArticle.map((item, index) =>(
             <div key={index}>
                 <img src={`./images/${item.image}`} alt=""/>
-                {item.author}
-                {item.title}
-                {item.extract}
+                <h6>By {item.author}</h6>
+                <h3> {item.title}</h3>
+                <p>{item.extract} ...</p>
+
+                
+               
+                
             </div>
               
           ))}
