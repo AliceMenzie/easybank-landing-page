@@ -1,7 +1,7 @@
 import Hero from "./Hero";
 import { Flex } from "./styles/Flex.styled";
 import { StyledHeader, Nav, Logo } from "./styles/Header.styled";
-
+import { Button } from "./styles/Button.styled";
 export default function Header() {
   return (
     <StyledHeader>
@@ -14,7 +14,7 @@ export default function Header() {
           <li>Blog</li>
           <li>Careers</li>
         </ul>
-        <button>Request Invite</button>
+        <Button>Request Invite</Button>
       </Nav>
       {/* <Flex> */}
           <Hero/>

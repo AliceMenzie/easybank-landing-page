@@ -13,7 +13,7 @@ function App() {
       lightGrey: "hsl(0, 0%, 98%)",
       white: "hsl(0, 0%, 100%)",
       darkBlue: "hsl(233, 26%, 24%)",
-      limeGreen: "hsl(136, 65%, 51%)",
+      lime: "hsl(136, 65%, 51%)",
       brightCyan: "hsl(192, 70%, 51%)",
       grey: "rgb(193, 193, 195)",
     },

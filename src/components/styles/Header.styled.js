@@ -22,15 +22,7 @@ export const Nav = styled.nav`
         }
     }
 
-    button {
-        border-radius: 50px;
-        padding: 0.5rem 1.5rem;
-        border: none;
-        cursor: pointer;
-        background-color: limegreen;
-        color: ${({ theme }) => theme.colors.white};
-        white-space: nowrap;
-    }
+    
 
 `
 export const Logo = styled.img`

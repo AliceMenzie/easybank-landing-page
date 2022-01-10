@@ -1,7 +1,7 @@
 import { Logo } from "./styles/Header.styled";
 import { StyledFooter } from "./styles/Footer.styled";
 import Socials from "./Socials";
-
+import { Button } from "./styles/Button.styled";
 export default function Footer() {
   return (
     <StyledFooter>
@@ -21,7 +21,7 @@ export default function Footer() {
         <li>Privacy Policy</li>
       </ul>
       <div>
-      <button>Request Invite</button>
+      <Button>Request Invite</Button>
       <p>&copy; Easybank. All Rights Reserved</p>
       
       </div>

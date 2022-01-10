@@ -40,17 +40,6 @@ export const StyledFooter = styled.footer`
         align-items: end;
         margin-left: auto;
 
-        button {
-        border-radius: 50px;
-        padding: 0.5rem 1.5rem;
-        border: none;
-        cursor: pointer;
-        background-color: limegreen;
-        color: ${({ theme }) => theme.colors.white};
-        white-space: nowrap;
-        display: block;
-    }
-
         p {
             color: ${({ theme }) => theme.colors.grey};
             font-size: 10px;

@@ -1,5 +1,7 @@
+import { Button } from "./styles/Button.styled"
 import { StyledHero } from "./styles/Hero.styled"
 import { Image } from "./styles/Hero.styled"
+
 export default function Hero() {
     return (
         <StyledHero>
@@ -10,7 +12,7 @@ export default function Hero() {
           one-stop-shop for spending, saving, budgeting, investing, and much
           more.
         </p>
-        <button>Request Invite</button>
+        <Button>Request Invite</Button>
         </div>
         
         <Image src="./images/bg-intro-desktop.svg" alt="mobile phones"/>
