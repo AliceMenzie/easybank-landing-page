@@ -5,7 +5,7 @@ export const StyledArticle = styled.article`
 padding: 0rem 5rem 5rem 5rem;
 display: flex;
 flex-direction: column;
-background-color: ${({ theme }) => theme.colors.lightGrey};
+background-color: ${({ theme }) => theme.colors.light};
 
 h1 {
     color: ${({ theme }) => theme.colors.darkBlue};
@@ -16,14 +16,16 @@ div {
     /* border: 1px solid red; */
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     margin-right: 1rem;
-    background-color: ${({ theme }) => theme.colors.lightGrey};
+    background-color: ${({ theme }) => theme.colors.light};
 
     div {
-        /* border: 1px solid red; */
+        border: 1px solid red;
         display: flex;
     flex-direction: column;
     background-color: ${({ theme }) => theme.colors.white};
+    max-width: 200px;
 
     h6 {
         padding: 1rem 1rem 0.5rem 1rem;
