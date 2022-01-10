@@ -1,4 +1,4 @@
-import { Logo } from "./styles/Header.styled";
+import { Logo } from "./styles/Navbar.styled";
 import { StyledFooter } from "./styles/Footer.styled";
 import Socials from "./Socials";
 import { Button } from "./styles/Button.styled";
