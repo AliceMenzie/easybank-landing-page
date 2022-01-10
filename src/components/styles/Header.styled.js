@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyledHeader = styled.header`
-
+/* z-index: -10000; */
 
 `
 export const Nav = styled.nav`
@@ -10,7 +10,7 @@ export const Nav = styled.nav`
     justify-content: space-around;
     background-color: ${({ theme }) => theme.colors.white};
     color: ${({ theme }) => theme.colors.grey};
-    z-index: 99999;
+    
 
     ul {
         display: flex;
