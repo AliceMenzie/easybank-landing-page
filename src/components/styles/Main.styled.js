@@ -25,6 +25,7 @@ p {
 div{
     border: 1px solid red;
     display: flex;
+    justify-content: space-around;
     div {
         border: 1px solid red;
         display: flex;
@@ -41,7 +42,7 @@ div{
             padding-bottom: 1rem;
         }
         p {
-            width: 20ch;
+            width: 25ch;
             line-height: 1.25;
         }
     }
