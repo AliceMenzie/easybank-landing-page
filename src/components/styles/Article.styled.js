@@ -4,7 +4,7 @@ export const StyledArticle = styled.article`
   padding: 0rem 5rem 5rem 5rem;
   display: flex;
   flex-direction: column;
-  background-color: ${({ theme }) => theme.colors.light};
+  background-color: ${({ theme }) => theme.colors.lightGrey};
 
   h1 {
     color: ${({ theme }) => theme.colors.darkBlue};
@@ -16,7 +16,7 @@ export const StyledArticle = styled.article`
     flex-direction: row;
     justify-content: space-around;
     margin-right: 1rem;
-    background-color: ${({ theme }) => theme.colors.light};
+    background-color: ${({ theme }) => theme.colors.lightGrey};
 
     div {
       display: flex;

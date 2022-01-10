@@ -4,6 +4,7 @@ export const StyledHero = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  /* background-color: ${({ theme }) => theme.colors.lightGrey}; */
 
   div:nth-child(1) {
     margin-left: 5rem;
