@@ -12,7 +12,7 @@ export default function Hero() {
           one-stop-shop for spending, saving, budgeting, investing, and much
           more.
         </p>
-        <Button>Request Invite</Button>
+        <Button className="btn">Request Invite</Button>
       </div>
 
       <div>

@@ -40,6 +40,41 @@ export const StyledHero = styled.div`
       white-space: nowrap;
     }
   }
+
+  @media (max-width: ${({ theme }) => theme.tablet}) {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+
+    div:nth-child(1) {
+      align-self: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      h1 {
+        padding-top: 2rem;
+        text-align: center;
+        font-size: 3rem;
+      }
+      p {
+        text-align: center;
+      }
+    }
+    div:nth-child(2) {
+      width: 700px;
+      height: 500px;
+      background-image: url("./images/bg-intro-mobile.svg");
+      background-position: left;
+      background-repeat: no-repeat;
+      background-size: 140%;
+      z-index: -2;
+    }
+  }
+
+  @media (max-width: ${({ theme }) => theme.mobile}) {
+  }
 `;
 
 export const Image = styled.img`
@@ -48,4 +83,10 @@ export const Image = styled.img`
   right: -160px;
   width: 90%;
   z-index: -1;
+
+  @media (max-width: ${({ theme }) => theme.tablet}) {
+    width: 85%;
+    top: -11.5rem;
+    left: 5rem;
+  }
 `;
