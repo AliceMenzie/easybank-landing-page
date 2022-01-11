@@ -6,9 +6,9 @@ export default function Footer() {
   return (
     <StyledFooter>
       <div>
-      <Logo src="./images/logo-footer.svg" alt="easybank" />
-      {/* Socials Go Here */}
-      <Socials/>
+        <Logo src="./images/logo-footer.svg" alt="easybank" />
+        {/* Socials Go Here */}
+        <Socials />
       </div>
       <ul>
         <li>About Us</li>
@@ -21,11 +21,9 @@ export default function Footer() {
         <li>Privacy Policy</li>
       </ul>
       <div>
-      <Button>Request Invite</Button>
-      <p>&copy; Easybank. All Rights Reserved</p>
-      
+        <Button>Request Invite</Button>
+        <p>&copy; Easybank. All Rights Reserved</p>
       </div>
-      
     </StyledFooter>
   );
 }
