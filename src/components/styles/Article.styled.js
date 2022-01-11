@@ -50,4 +50,40 @@ export const StyledArticle = styled.article`
       object-fit: cover;
     }
   }
+
+  @media (max-width: ${({ theme }) => theme.tablet}) {
+    text-align: center;
+
+    div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+
+      div {
+        text-align: left;
+        margin: 0;
+        max-width: 40vh;
+        height: auto;
+        margin-bottom: 1.5rem;
+        img {
+          max-width: 100%;
+          height: auto;
+        }
+
+        h6 {
+          align-self: start;
+        }
+        h3 {
+          width: 100%;
+        }
+        p {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  @media (max-width: ${({ theme }) => theme.mobile}) {
+  }
 `;

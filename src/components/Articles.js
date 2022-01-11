@@ -12,10 +12,6 @@ export default function Article() {
                 <h6>By {item.author}</h6>
                 <h3> {item.title}</h3>
                 <p>{item.extract} ...</p>
-
-                
-               
-                
             </div>
               
           ))}
