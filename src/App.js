@@ -20,6 +20,7 @@ function App() {
     // mobile: "768px"
     tablet: "645px",
     mobile: "375px",
+    large: "1800px"
   };
 
   return (

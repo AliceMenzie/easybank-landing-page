@@ -19,11 +19,11 @@ export const Nav = styled.nav`
     }
 
     @media (max-width: ${({ theme }) => theme.tablet}) {
-        position: fixed;
+        /* position: fixed;
         top: 0;
         left: 0;
         right: 0;
-        width: 100%;
+        width: 100%; */
         
         ul {
         li {

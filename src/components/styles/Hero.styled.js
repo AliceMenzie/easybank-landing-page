@@ -11,7 +11,8 @@ export const StyledHero = styled.div`
     align-self: center;
   }
   div:nth-child(2) {
-    width: 700px;
+    /* border: 1px solid red; */
+    width: 100%;
     height: 500px;
     background-image: url("./images/bg-intro-desktop.svg");
     background-position: left;
@@ -55,7 +56,8 @@ export const StyledHero = styled.div`
       justify-content: center;
       margin-left: 0rem;
       h1 {
-        padding-top: 2rem;
+        /* padding-top: 2rem; */
+        margin-top: -4rem;
         text-align: center;
         font-size: 3rem;
       }
@@ -64,12 +66,11 @@ export const StyledHero = styled.div`
       }
     }
     div:nth-child(2) {
-      width: 700px;
-      height: 500px;
       background-image: url("./images/bg-intro-mobile.svg");
-      background-position: left;
+      /* background-position: right; */
+      background-position: bottom right;
       background-repeat: no-repeat;
-      background-size: 140%;
+      background-size: 130%;
       z-index: -2;
     }
   }
@@ -81,13 +82,19 @@ export const StyledHero = styled.div`
 export const Image = styled.img`
   position: relative;
   bottom: 90px;
-  right: -160px;
-  width: 90%;
+  right: -170px;
+  width: 85%;
   z-index: -1;
+
+  @media (min-width: ${({ theme }) => theme.large}) {
+    bottom: 15rem;
+  right: -25rem;
+    width: 60%;
+  }
 
   @media (max-width: ${({ theme }) => theme.tablet}) {
     width: 85%;
-    top: -11.5rem;
-    left: 5rem;
+    top: -12rem;
+    left: 2.5rem;
   }
 `;
