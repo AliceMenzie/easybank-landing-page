@@ -47,4 +47,34 @@ export const StyledMain = styled.main`
       }
     }
   }
+
+  @media (max-width: ${({ theme }) => theme.tablet}) {
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+      width: 11ch;
+
+      text-align: center;
+    }
+    p {
+      width: 100%;
+      text-align: center;
+    }
+    div {
+      flex-direction: column;
+      div {
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        p {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  @media (max-width: ${({ theme }) => theme.mobile}) {
+  }
 `;

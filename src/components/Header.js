@@ -5,6 +5,7 @@ import Navbar from "./Navbar";
 export default function Header() {
   return (
     <StyledHeader>
+      
       <Navbar />
       <Hero />
     </StyledHeader>

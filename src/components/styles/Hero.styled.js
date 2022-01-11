@@ -53,6 +53,7 @@ export const StyledHero = styled.div`
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      margin-left: 0rem;
       h1 {
         padding-top: 2rem;
         text-align: center;

@@ -2,6 +2,7 @@ import { Nav, Logo } from "./styles/Navbar.styled";
 import { Button } from "./styles/Button.styled";
 
 export default function Navbar() {
+    
   return (
     <Nav>
       <Logo src="./images/logo.svg" alt="easybank" />

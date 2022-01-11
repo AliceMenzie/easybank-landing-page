@@ -18,11 +18,32 @@ export const Nav = styled.nav`
         }
     }
 
+    @media (max-width: ${({ theme }) => theme.tablet}) {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        
+        ul {
+        li {
+            padding-left: 0.5rem;
+            font-weight: 400;
+            font-size: 10px;
+        } 
+
+    }
+        
+  }
+
+  @media (max-width: ${({ theme }) => theme.mobile}) {
+  }
+
     
 
 `
 
 export const Logo = styled.img`
-width: 10rem;
+width: 7rem;
 
 `
