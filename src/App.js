@@ -17,7 +17,7 @@ function App() {
       brightCyan: "hsl(192, 70%, 51%)",
       grey: "#9698a6",
     },
-    mobile: "375px",
+    mobile: "650px",
     tablet: "1024px",
     large: "1800px",
   };
