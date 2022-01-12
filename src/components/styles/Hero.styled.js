@@ -76,6 +76,10 @@ export const StyledHero = styled.div`
   }
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
+    div:nth-child(2) {
+      margin-top: ${({ isOpen }) => (isOpen ? "-5rem" : "0")};
+      /* margin-top: -5.2rem; */
+    }
   }
 `;
 
@@ -97,4 +101,9 @@ export const Image = styled.img`
     top: -12rem;
     left: 2.5rem;
   }
+
+  @media (max-width: ${({ theme }) => theme.mobile}) {
+    display: none;
+  }
+
 `;

@@ -1,18 +1,28 @@
-import { Nav, Logo } from "./styles/Navbar.styled";
+import { Nav, Logo, Hamburger, Menu } from "./styles/Navbar.styled";
 import { Button } from "./styles/Button.styled";
-
-export default function Navbar() {
+// import React, { useState } from "react";
+export default function Navbar( {isOpen, setIsOpen}) {
     
+    // const [isOpen, setIsOpen] = useState(false)
+
   return (
     <Nav>
+      {/* <div> */}
       <Logo src="./images/logo.svg" alt="easybank" />
-      <ul>
+      
+      
+        <Hamburger isOpen={isOpen} onClick={()=> setIsOpen(!isOpen)}/>
+        {/* <Close /> */}
+      {/* </div> */}
+      
+      <Menu isOpen={isOpen}>
         <li>Home</li>
         <li>About</li>
         <li>Contact</li>
         <li>Blog</li>
         <li>Careers</li>
-      </ul>
+      </Menu>
+      
       <Button>Request Invite</Button>
     </Nav>
   );

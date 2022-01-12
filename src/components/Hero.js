@@ -2,9 +2,9 @@ import { Button } from "./styles/Button.styled";
 import { StyledHero } from "./styles/Hero.styled";
 import { Image } from "./styles/Hero.styled";
 
-export default function Hero() {
+export default function Hero( {isOpen}) {
   return (
-    <StyledHero>
+    <StyledHero isOpen={isOpen}>
       <div>
         <h1>Next generation digital banking</h1>
         <p>
