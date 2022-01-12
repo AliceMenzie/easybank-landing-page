@@ -14,7 +14,7 @@ export const StyledMain = styled.main`
 
   h1 {
     color: ${({ theme }) => theme.colors.darkBlue};
-    margin: 2rem 0;
+    margin: 4.5rem 0 2rem;
   }
   p {
     color: ${({ theme }) => theme.colors.grey};
@@ -25,6 +25,7 @@ export const StyledMain = styled.main`
   }
 
   div {
+    padding-top: 1rem;
     display: flex;
     justify-content: space-between;
     div {

@@ -18,7 +18,7 @@ export const StyledHero = styled.div`
     background-image: url("./images/bg-intro-desktop.svg");
     background-position: left;
     background-repeat: no-repeat;
-    background-size: 160%;
+    background-size: 200%;
     z-index: -2;
   }
 
@@ -88,14 +88,14 @@ export const StyledHero = styled.div`
 export const Image = styled.img`
   position: relative;
   bottom: 90px;
-  right: -22rem;
-  max-width: 65%;
+  right: -12rem;
+  max-width: 80%;
   z-index: -1;
 
   @media (min-width: ${({ theme }) => theme.large}) {
     bottom: 15rem;
     right: -25rem;
-    /* width: 60%; */
+    max-width: 65%;
   }
 
   @media (max-width: ${({ theme }) => theme.tablet}) {
