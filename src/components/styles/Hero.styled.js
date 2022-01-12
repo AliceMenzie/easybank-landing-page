@@ -65,7 +65,6 @@ export const StyledHero = styled.div`
       p {
         text-align: center;
         font-size: 12px;
-        
       }
     }
     div:nth-child(2) {
@@ -80,10 +79,13 @@ export const StyledHero = styled.div`
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
     div:nth-child(2) {
-      margin-top: ${({ isOpen }) => (isOpen ? "-26.5rem" : "-10rem")};
+      margin-top: ${({ isOpen }) => (isOpen ? "-22rem" : "-6rem")};
+    }
+    div:nth-child(1) {
+      margin-top: ${({ isOpen }) => (isOpen ? "1rem" : "5rem")};
     }
   }
-`
+`;
 
 export const Image = styled.img`
   position: relative;
@@ -105,11 +107,9 @@ export const Image = styled.img`
   }
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
-    display: ${({ isOpen }) => (isOpen ? "none" : "flex")};
     width: 85%;
-    top: -2rem;
+    width: ${({ isOpen }) => (isOpen ? "0%" : "85%")};
+    top: -6rem;
     left: 2.5rem;
   }
 `;
-
-

@@ -57,7 +57,9 @@ export const Logo = styled.img`
 // ---------------------- MENU
 
 export const Menu = styled.ul`
-  display: flex;
+box-shadow:${({ isOpen }) => (isOpen ? "rgba(150, 153, 167, 0.45) 0px 54px 55px, rgba(150, 153, 167, 0.12) 0px -12px 30px, rgba(150, 153, 167, 0.12) 0px 4px 6px, rgba(150, 153, 167, 0.17) 0px 12px 13px, rgba(150, 153, 167, 0.09) 0px -3px 5px" : "none")};
+
+display: flex;
     flex-direction: row;
     list-style-type: none;
     li {
@@ -103,7 +105,7 @@ export const Menu = styled.ul`
     color: ${({ theme }) => theme.colors.darkBlue};
     }
 
-    &:before {
+    /* &:before {
     content: "";
     position: absolute;
     display: ${({ isOpen }) => (isOpen ? "unset" : "none")};
@@ -114,7 +116,7 @@ export const Menu = styled.ul`
     background: rgb(150, 153, 167);
     opacity: .5;
     z-index: -1;
-  }
+  } */
 
 
   }
