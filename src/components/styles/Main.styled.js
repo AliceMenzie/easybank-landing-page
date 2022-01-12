@@ -26,7 +26,7 @@ export const StyledMain = styled.main`
 
   div {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     div {
       display: flex;
       flex-direction: column;

@@ -14,7 +14,7 @@ export const StyledArticle = styled.article`
   div {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-right: 1rem;
     background-color: ${({ theme }) => theme.colors.lightGrey};
 
