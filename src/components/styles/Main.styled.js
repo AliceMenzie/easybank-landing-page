@@ -7,8 +7,7 @@ export const StyledMain = styled.main`
   padding-top: 2.5rem;
   padding: 0rem 5rem;
   padding-bottom: 5rem;
-  /* background-color: hsla(${({ theme }) =>
-    theme.colors.lightGreyBlue}, .9); */
+  /* background-color: ${({ theme }) => theme.colors.lightGreyBlue}; */
   z-index: -9999;
 
   h1 {

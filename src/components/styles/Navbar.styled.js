@@ -134,7 +134,7 @@ export const Hamburger = styled.div`
     width: 2em;
     background-position: center;
     background-repeat: no-repeat;
-
+    cursor: pointer;
     z-index: 10;
   }
 
