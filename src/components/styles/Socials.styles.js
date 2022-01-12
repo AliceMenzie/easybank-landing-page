@@ -20,6 +20,8 @@ export const StyledSocials = styled.div`
       width: 20px;
 
       &:hover {
+        color: ${({ theme }) => theme.colors.lime};
+        cursor: pointer;
       }
     }
   }

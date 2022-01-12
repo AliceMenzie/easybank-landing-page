@@ -27,6 +27,10 @@ export const StyledFooter = styled.footer`
     li {
       margin-bottom: 1rem;
       white-space: nowrap;
+      &:hover {
+        color: ${({ theme }) => theme.colors.lime};
+        cursor: pointer;
+      }
     }
   }
 

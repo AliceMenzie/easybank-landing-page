@@ -34,6 +34,15 @@ export const StyledArticle = styled.article`
         font-size: 14px;
         padding: 0rem 1rem;
         font-weight: 400;
+        &:hover {
+      cursor: pointer;
+      
+      background: -webkit-linear-gradient(190deg, ${({ theme }) => theme.colors.lime}, ${({ theme }) => theme.colors.brightCyan});
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      filter: brightness(120%);
+    }
       }
 
       p {
