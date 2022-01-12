@@ -29,8 +29,11 @@ h5,
 h6,
 p {
   font-weight: 300;
+  
 }
-
+p {
+  line-height: 1.5;
+}
   body {
     overflow-x: hidden;
     background: white;
