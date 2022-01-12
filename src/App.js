@@ -17,10 +17,9 @@ function App() {
       brightCyan: "hsl(192, 70%, 51%)",
       grey: "#9698a6",
     },
-    // mobile: "768px"
-    tablet: "645px",
     mobile: "375px",
-    large: "1800px"
+    tablet: "1024px",
+    large: "1800px",
   };
 
   return (
