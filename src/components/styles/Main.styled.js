@@ -9,7 +9,6 @@ export const StyledMain = styled.main`
   padding-bottom: 5rem;
   /* background-color: hsla(${({ theme }) =>
     theme.colors.lightGreyBlue}, .9); */
-
   z-index: -9999;
 
   h1 {
@@ -77,5 +76,8 @@ export const StyledMain = styled.main`
   }
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
+    h1 {
+      font-size: 1.8rem;
+    }
   }
 `;
