@@ -33,15 +33,6 @@ export const StyledHero = styled.div`
       color: ${({ theme }) => theme.colors.grey};
     }
 
-    button {
-      border-radius: 50px;
-      padding: 0.5rem 1.5rem;
-      border: none;
-      cursor: pointer;
-      background-color: limegreen;
-      color: ${({ theme }) => theme.colors.white};
-      white-space: nowrap;
-    }
   }
 
   @media (max-width: ${({ theme }) => theme.tablet}) {
