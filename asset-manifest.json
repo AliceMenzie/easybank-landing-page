@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.js": "/easybank-landing-page/static/js/main.7e26341d.js",
+    "main.js": "/easybank-landing-page/static/js/main.966f8ebc.js",
     "static/js/787.5ba246a6.chunk.js": "/easybank-landing-page/static/js/787.5ba246a6.chunk.js",
     "index.html": "/easybank-landing-page/index.html",
-    "main.7e26341d.js.map": "/easybank-landing-page/static/js/main.7e26341d.js.map",
+    "main.966f8ebc.js.map": "/easybank-landing-page/static/js/main.966f8ebc.js.map",
     "787.5ba246a6.chunk.js.map": "/easybank-landing-page/static/js/787.5ba246a6.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.7e26341d.js"
+    "static/js/main.966f8ebc.js"
   ]
 }
