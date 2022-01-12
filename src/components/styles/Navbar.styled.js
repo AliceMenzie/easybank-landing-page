@@ -8,21 +8,18 @@ export const Nav = styled.nav`
   background-color: ${({ theme }) => theme.colors.white};
   color: ${({ theme }) => theme.colors.grey};
 
-
   @media (max-width: ${({ theme }) => theme.tablet}) {
-    /* ul {
-        display: none;
-       
-    
-    border: solid;
-    flex-direction: row;
-      li {
-        padding-left: 0.5rem;
-        font-weight: 400;
-        font-size: 10px;
-      }
-    } */
-
+    flex-direction: ${({ isOpen }) => (isOpen ? "row" : "column")};
+    div:nth-child(1){
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      align-self: center;
+      width: 100%;
+      background-color: white;
+      padding: 1rem;
+    }
+  
     button {
       display: none;
     }
@@ -31,34 +28,24 @@ export const Nav = styled.nav`
   @media (max-width: ${({ theme }) => theme.mobile}) {
     flex-direction: column;
     background-color: transparent;
-    border: 1px solid red;
-
+    flex-wrap: wrap;
     div:nth-child(1) {
       display: flex;
-      justify-items: space-between;
       align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      background-color: white;
+      padding: 1rem;
     }
-  
-  img {
-    border: 1px solid red;
-    align-self: flex-start;
-  }
 
-  /* ul {
-    
-    border: 1px solid red;
-    flex-direction: column;
-    background-color: white;
-    li {
-      padding-left: 0.5rem;
-      font-weight: 400;
-      font-size: 10px;
+    img {
+      align-self: center;
     }
-} */
+
     button {
       display: none;
     }
-}
+  }
 `;
 
 // ------------------------ LOGO
@@ -67,11 +54,10 @@ export const Logo = styled.img`
   width: 7rem;
 `;
 
-
 // ---------------------- MENU
 
 export const Menu = styled.ul`
-    display: flex;
+  display: flex;
     flex-direction: row;
     list-style-type: none;
     li {
@@ -79,36 +65,69 @@ export const Menu = styled.ul`
       font-weight: 400;
       font-size: 14px;
     }
- @media (max-width: ${({ theme }) => theme.tablet}) {
-     /* display: none; */
-     background-color: white;
+  @media (max-width: ${({ theme }) => theme.tablet}) {
     display: ${({ isOpen }) => (isOpen ? "flex" : "none")};
-    li {
-        padding-left: 0.5rem;
-        font-weight: 400;
-        font-size: 10px;
-      }
-}
- @media (max-width: ${({ theme }) => theme.mobile}) {
-    display: ${({ isOpen }) => (isOpen ? "flex" : "none")};
-    background-color: white;
-    li {
-      padding-left: 0.5rem;
-      font-weight: 400;
-      font-size: 10px;
-    }
- }
-`
+    align-items: center;
+    flex-direction: row;
+  justify-content: center;
+  list-style-type: none;
+  border-radius: 5px;
+  padding: unset;
+  width: 80%;
 
-//  HAMBURGER
+    background-color: white;
+  li {
+    align-self: center;
+    padding: 1rem;
+    font-weight: 400;
+    font-size: 14px;
+    color: ${({ theme }) => theme.colors.darkBlue};
+    }
+  }
+  @media (max-width: ${({ theme }) => theme.mobile}) {
+    display: ${({ isOpen }) => (isOpen ? "flex" : "none")};
+    align-items: center;
+    flex-direction: column;
+  justify-content: center;
+  list-style-type: none;
+  border-radius: 5px;
+  padding: unset;
+  width: 80%;
+
+    background-color: white;
+  li {
+    align-self: center;
+    padding: 1rem;
+    font-weight: 400;
+    font-size: 14px;
+    color: ${({ theme }) => theme.colors.darkBlue};
+    }
+
+    &:before {
+    content: "";
+    position: absolute;
+    display: ${({ isOpen }) => (isOpen ? "unset" : "none")};
+    top: -2rem;
+    bottom: 0;
+    left: 0;
+    right: 0;   //absolutely position element covers entire page
+    background: rgb(150, 153, 167);
+    opacity: .5;
+    z-index: -1;
+  }
+
+
+  }
+`;
+
+// ---------------------- HAMBURGER
 
 export const Hamburger = styled.div`
   display: none;
 
   @media (max-width: ${({ theme }) => theme.tablet}) {
     display: flex;
-    border: ${({ isOpen }) => (isOpen ? "5px solid blue" : "1px solid red")};
-    background-image: url(${({ isOpen }) => (isOpen ? "./images/icon-close.svg" : "./images/icon-hamburger.svg")});
+    background-image: url(${({ isOpen }) => isOpen ? "./images/icon-close.svg" : "./images/icon-hamburger.svg"});
     height: 2em;
     width: 2em;
     background-position: center;
@@ -119,7 +138,7 @@ export const Hamburger = styled.div`
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
     display: flex;
-    border: ${({ isOpen }) => (isOpen ? "1px solid red" : "5px solid blue")};
-    background-image: url(${({ isOpen }) => (isOpen ? "./images/icon-close.svg" : "./images/icon-hamburger.svg")});
+    background-image: url(${({ isOpen }) => isOpen ? "./images/icon-close.svg" : "./images/icon-hamburger.svg"});
+    z-index: 99999;
   }
 `;

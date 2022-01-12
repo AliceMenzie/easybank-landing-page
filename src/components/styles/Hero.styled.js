@@ -8,18 +8,20 @@ export const StyledHero = styled.div`
 
   div:nth-child(1) {
     margin-left: 5rem;
+    margin-top: 2rem;
     align-self: center;
   }
+
   div:nth-child(2) {
-    /* border: 1px solid red; */
-    width: 100%;
-    height: 500px;
+    max-width: 100%;
+    height: 400px;
     background-image: url("./images/bg-intro-desktop.svg");
     background-position: left;
     background-repeat: no-repeat;
-    background-size: 200%;
+    background-size: 160%;
     z-index: -2;
   }
+
   div {
     h1 {
       width: 15ch;
@@ -53,57 +55,61 @@ export const StyledHero = styled.div`
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
+      justify-content: stretch;
       margin-left: 0rem;
       h1 {
-        /* padding-top: 2rem; */
         margin-top: -4rem;
         text-align: center;
-        font-size: 3rem;
+        font-size: 2.5rem;
       }
       p {
         text-align: center;
+        font-size: 12px;
+        
       }
     }
     div:nth-child(2) {
       background-image: url("./images/bg-intro-mobile.svg");
-      /* background-position: right; */
-      background-position: bottom right;
+      background-position: bottom left;
       background-repeat: no-repeat;
-      background-size: 130%;
+      background-size: 100%;
       z-index: -2;
+      padding-top: 5rem;
     }
   }
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
     div:nth-child(2) {
-      margin-top: ${({ isOpen }) => (isOpen ? "-5rem" : "0")};
-      /* margin-top: -5.2rem; */
+      margin-top: ${({ isOpen }) => (isOpen ? "-26.5rem" : "-10rem")};
     }
   }
-`;
+`
 
 export const Image = styled.img`
   position: relative;
   bottom: 90px;
-  right: -170px;
-  width: 85%;
+  right: -22rem;
+  max-width: 65%;
   z-index: -1;
 
   @media (min-width: ${({ theme }) => theme.large}) {
     bottom: 15rem;
-  right: -25rem;
-    width: 60%;
+    right: -25rem;
+    /* width: 60%; */
   }
 
   @media (max-width: ${({ theme }) => theme.tablet}) {
-    width: 85%;
-    top: -12rem;
-    left: 2.5rem;
+    width: 30rem;
+    top: -17rem;
+    left: 25%;
   }
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
-    display: none;
+    display: ${({ isOpen }) => (isOpen ? "none" : "flex")};
+    width: 85%;
+    top: -2rem;
+    left: 2.5rem;
   }
-
 `;
+
+

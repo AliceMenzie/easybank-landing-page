@@ -16,7 +16,7 @@ export default function Hero( {isOpen}) {
       </div>
 
       <div>
-        <Image src="./images/image-mockups.png" alt="mobile phones" />
+        <Image isOpen={isOpen} src="./images/image-mockups.png" alt="mobile phones" />
       </div>
     </StyledHero>
   );
